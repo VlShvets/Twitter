@@ -1,9 +1,10 @@
 spring:
     datasource:
-        url: jdbc:postgresql://localhost:5432/sweater
+        url=jdbc:postgresql://localhost/sweater
         username=postgres
         password=123
     jpa:
         generate-ddl=true
-        hibernate:
-            ddl-auto=update
+
+    mustache:
+        expose-request-attributes=true
